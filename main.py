@@ -19,7 +19,7 @@ def manage_clipboard(cmd:str):
     
     time.sleep(0.1)
     return pyperclip.paste()
-
+	
 gibberish_text = manage_clipboard('c')
 clean_text = convert_gb(gibberish_text)
 copied_clean_text = pyperclip.copy(clean_text)
